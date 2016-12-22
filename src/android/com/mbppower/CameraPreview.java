@@ -22,7 +22,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 public class CameraPreview extends CordovaPlugin implements CameraActivity.CameraPreviewListener {
-
   private final String TAG = "CameraPreview";
   private final String setOnPictureTakenHandlerAction = "setOnPictureTakenHandler";
   private final String setColorEffectAction = "setColorEffect";
@@ -173,8 +172,8 @@ public class CameraPreview extends CordovaPlugin implements CameraActivity.Camer
             ((ViewGroup) webView.getView()).bringToFront();
           }
           else {
-            //set camera back to front
-            containerView.setAlpha(Float.parseFloat(args.getString(8)));
+            // set camera back to front
+            // containerView.setAlpha(Float.parseFloat(args.getString(8)));
             containerView.bringToFront();
           }
 
